@@ -11,7 +11,6 @@
 		CAEDE4B72970941600D27D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B62970941600D27D6C /* ContentView.swift */; };
 		CAEDE4B92970941700D27D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4B82970941700D27D6C /* Assets.xcassets */; };
 		CAEDE4BC2970941700D27D6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4BB2970941700D27D6C /* Preview Assets.xcassets */; };
-		CAEDE4C329709A5A00D27D6C /* DoubleColorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4C229709A5A00D27D6C /* DoubleColorShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		CAEDE4B62970941600D27D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAEDE4B82970941700D27D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEDE4BB2970941700D27D6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CAEDE4C229709A5A00D27D6C /* DoubleColorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleColorShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			children = (
 				CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */,
 				CAEDE4B62970941600D27D6C /* ContentView.swift */,
-				CAEDE4C229709A5A00D27D6C /* DoubleColorShape.swift */,
 				CAEDE4B82970941700D27D6C /* Assets.xcassets */,
 				CAEDE4BA2970941700D27D6C /* Preview Content */,
 			);
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEDE4C329709A5A00D27D6C /* DoubleColorShape.swift in Sources */,
 				CAEDE4B72970941600D27D6C /* ContentView.swift in Sources */,
 				CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */,
 			);
