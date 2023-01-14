@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA5F2BD52972FC0700A5A5AF /* TradingFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */; };
+		CA5F2BD72972FFBC00A5A5AF /* TradingBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */; };
 		CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */; };
-		CAEDE4B72970941600D27D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B62970941600D27D6C /* ContentView.swift */; };
+		CAEDE4B72970941600D27D6C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B62970941600D27D6C /* BackgroundView.swift */; };
 		CAEDE4B92970941700D27D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4B82970941700D27D6C /* Assets.xcassets */; };
 		CAEDE4BC2970941700D27D6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4BB2970941700D27D6C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingFrontView.swift; sourceTree = "<group>"; };
+		CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingBackView.swift; sourceTree = "<group>"; };
 		CAEDE4B12970941600D27D6C /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
-		CAEDE4B62970941600D27D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAEDE4B62970941600D27D6C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		CAEDE4B82970941700D27D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEDE4BB2970941700D27D6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */,
-				CAEDE4B62970941600D27D6C /* ContentView.swift */,
+				CAEDE4B62970941600D27D6C /* BackgroundView.swift */,
+				CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */,
+				CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */,
 				CAEDE4B82970941700D27D6C /* Assets.xcassets */,
 				CAEDE4BA2970941700D27D6C /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEDE4B72970941600D27D6C /* ContentView.swift in Sources */,
+				CAEDE4B72970941600D27D6C /* BackgroundView.swift in Sources */,
+				CA5F2BD72972FFBC00A5A5AF /* TradingBackView.swift in Sources */,
 				CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */,
+				CA5F2BD52972FC0700A5A5AF /* TradingFrontView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
