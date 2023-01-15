@@ -20,7 +20,7 @@ struct BackgroundView: View {
                         .frame(width: 30.0)
                         .foregroundColor(.white)
                     Rectangle()
-                        .frame(width: 25.0)
+                        .frame(width: 26.0)
                         .foregroundColor(Color("MRed"))
                 }
                 Spacer()

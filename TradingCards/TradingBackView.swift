@@ -13,25 +13,26 @@ struct TradingBackView: View {
             BackgroundView()
             
             //Layer 4
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(Color("MRed"))
-                .frame(width: 340, height: 650)
-                .padding(.bottom, 10)
-                .padding(.leading, 23)
+        
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.white)
-                .frame(width: 325, height: 640)
+                .frame(width: 335, height: 640)
+                .overlay(
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .stroke(Color("MRed"), lineWidth: 7)
+                                )
                 .padding(.bottom, 10)
-                .padding(.leading, 23)
+                .padding(.leading, 26)
+                
             
             //Layer 5
             VStack (alignment: .center){
                 Text("NAME")
                 VStack{
                     HStack {
-                        Image("FAG")
+                        Image("FAG1")
                             .resizable()
-                            .frame(width: 100.0, height: 150.0)
+                            .frame(width: 90.0, height: 150.0)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                         VStack(alignment: .leading){
                             Text("POSITION:")
