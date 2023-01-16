@@ -11,7 +11,7 @@ struct TradingView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-                .overlay(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Overlay Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/)
+                
 
             //Layer #4
             Image("FAG")
@@ -25,9 +25,7 @@ struct TradingView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(.bottom, 120)
                 .padding(.leading, 17)
-            
-                
-                
+
             //Layer #5
             Image("Image")
                 .resizable()
@@ -51,10 +49,7 @@ struct TradingView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    
                 }
-              
-                    
                 Text("USA Volleyball Player")
                     .foregroundColor(.white)
                 

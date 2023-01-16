@@ -26,11 +26,13 @@ struct TradingBackView: View {
             //Layer 5
             VStack (alignment: .center){
                 Text("MILLY BEK")
-                    .font(.title2.width(.expanded))
-                    .padding(.trailing, 135)
+                    .fontWidth(.expanded)
+                    .padding(.trailing, 130)
                     .foregroundColor(Color("DarkRed"))
-                    .fontWeight(.semibold)
-                
+                    .fontWeight(.medium)
+                    .font(Font.system(size: 23))
+                    .frame(height: 20)
+                    .padding(.bottom, 5)
                 VStack(alignment: .leading) {
                     HStack {
                         Image("FAG1")
@@ -38,6 +40,7 @@ struct TradingBackView: View {
                             .scaledToFill()
                             .frame(width: 115, height: 160.0)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
+                            
                         VStack(alignment: .leading){
                             Group{
                                 Text("POSITION : ")
@@ -50,6 +53,7 @@ struct TradingBackView: View {
                             Group{
                                 Text("AGE           : ")
                                     .font(.subheadline.width(.expanded))
+                                    
                                 
                                 + Text("HERE")
                                     .font(.subheadline.width(.expanded))
@@ -97,20 +101,28 @@ struct TradingBackView: View {
                 .frame(width: 320)
                 .padding(.leading, 35)
                 
-                Divider()
+           
                 Text("MILLY BEK")
-                    .font(.largeTitle.width(.compressed))
-                    .fontWeight(.bold)
+                    .padding(.top, 10.0)
+                    .fontWidth(.compressed)
+                    
                     .foregroundColor(Color("DarkRed"))
+                    .font(Font.system(size: 70))
+                    .frame(height: 60)
                 
-                Text("Volleyball Player")
+                Text("USA Volleyball Player")
+                    .fontWeight(.medium)
+                    .fontWidth(.expanded)
                     .font(.headline)
-                Text("_______________")
+                
+                Text("__________________")
                     .font(.caption)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color("DarkRed"))
                 Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
                     .font(.caption)
                     .multilineTextAlignment(.center)
-                    .frame(width: 280.0, height: 160.0)
+                    .frame(width: 280.0, height: 150.0)
                     .padding(.leading, 20.0)
                     .lineSpacing(/*@START_MENU_TOKEN@*/11.0/*@END_MENU_TOKEN@*/)
                 
