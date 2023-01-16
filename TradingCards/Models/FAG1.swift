@@ -10,7 +10,7 @@ import SwiftUI
 struct FAG: View {
     var body: some View {
         VStack {
-            TradingView(firstName: "Foluke", lastName: "Gunderson", image1Name: "FAG")
+            TradingView(name: "Foluke Gunderson", image1Name: "FAG")
             
         }
         

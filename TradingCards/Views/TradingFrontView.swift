@@ -9,16 +9,11 @@ import SwiftUI
 
 struct TradingView: View {
     
-    let firstName : String
-    let lastName : String
+    let name : String
     let image1Name: String
     var body: some View {
         ZStack {
-            
-            
             BackgroundView()
-                
-
             //Layer #4
             Image(image1Name)
                 .resizable()
@@ -45,27 +40,29 @@ struct TradingView: View {
             
             //Layer #6
             VStack (alignment: .trailing){
-                Group{
-                    Text(firstName)
-                        .font(.title)
+            
+                    Text(name)
+                        .font(Font.system(size: 40))
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
-                        .fontWidth(.compressed)
-                    + Text(" ")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                    + Text(lastName)
-                        .underline()
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color.white)
-                }
-                Text("USA Volleyball Player")
-                    .foregroundColor(.white)
+                        .multilineTextAlignment(.trailing)
+                        .fontWidth(.condensed)
+                        .lineSpacing(0.14)
                 
+                Text("_________________")
+                    .font(Font.system(size: 6))
+                    .foregroundColor(.white)
+                    .fontWeight(.black)
+
+                Text("VOLLEYBALL PLAYER")
+                    .foregroundColor(.white)
+                    .padding(.top, 0.01)
+                    .fontWeight(.semibold)
+
+                    
             }
-            .padding(.top, 530)
+            .frame(width: 200)
+            .padding(.top, 550)
             .padding(.leading, 160)
         }
     }
@@ -74,6 +71,6 @@ struct TradingView: View {
 
 struct TradingView_Previews: PreviewProvider {
     static var previews: some View {
-        TradingView(firstName: "Foluke", lastName: "Gunderson", image1Name: "FAG")
+        TradingView(name: "Foluke Gunderson", image1Name: "FAG")
     }
 }
