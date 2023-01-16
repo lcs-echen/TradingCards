@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KB: View {
     var body: some View {
-        TradingView(name: "Kara Bejema", image1Name: "KB")
+        TradingView(name: "Kara Bajema", image1Name: "KB")
     }
 }
 
