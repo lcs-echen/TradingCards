@@ -12,8 +12,7 @@ struct TradingBackView: View {
     let player : VolleyballPlayer
     
     var body: some View {
-        
-        ScrollView {
+    
             
             ZStack{
                 BackgroundView()
@@ -172,8 +171,7 @@ struct TradingBackView: View {
                     .padding(.leading, 240)
             }
             
-        }
-        .navigationTitle(player.name)
+      
     }
 }
     

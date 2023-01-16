@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		CA5F2BD52972FC0700A5A5AF /* TradingFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */; };
 		CA5F2BD72972FFBC00A5A5AF /* TradingBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */; };
-		CAA3D3CB2974EB6600908776 /* FAG1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3CA2974EB6600908776 /* FAG1.swift */; };
-		CAA3D3CD2974EDB400908776 /* FAG2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3CC2974EDB400908776 /* FAG2.swift */; };
-		CAA3D3CF2974F3F800908776 /* KB1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3CE2974F3F800908776 /* KB1.swift */; };
-		CAA3D3D32975908D00908776 /* KB2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D22975908D00908776 /* KB2.swift */; };
 		CAA3D3D52975926700908776 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D42975926700908776 /* Models.swift */; };
+		CAA3D3D72975966300908776 /* TradingCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D62975966300908776 /* TradingCardsView.swift */; };
+		CAA3D3D9297598D300908776 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D8297598D300908776 /* PlayerListView.swift */; };
 		CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */; };
 		CAEDE4B72970941600D27D6C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B62970941600D27D6C /* BackgroundView.swift */; };
 		CAEDE4B92970941700D27D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4B82970941700D27D6C /* Assets.xcassets */; };
@@ -23,11 +21,9 @@
 /* Begin PBXFileReference section */
 		CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingFrontView.swift; sourceTree = "<group>"; };
 		CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingBackView.swift; sourceTree = "<group>"; };
-		CAA3D3CA2974EB6600908776 /* FAG1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAG1.swift; sourceTree = "<group>"; };
-		CAA3D3CC2974EDB400908776 /* FAG2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAG2.swift; sourceTree = "<group>"; };
-		CAA3D3CE2974F3F800908776 /* KB1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KB1.swift; sourceTree = "<group>"; };
-		CAA3D3D22975908D00908776 /* KB2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KB2.swift; sourceTree = "<group>"; };
 		CAA3D3D42975926700908776 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = TradingCards/Models.swift; sourceTree = SOURCE_ROOT; };
+		CAA3D3D62975966300908776 /* TradingCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsView.swift; sourceTree = "<group>"; };
+		CAA3D3D8297598D300908776 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 		CAEDE4B12970941600D27D6C /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
 		CAEDE4B62970941600D27D6C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -52,6 +48,7 @@
 				CA5F2BD42972FC0700A5A5AF /* TradingFrontView.swift */,
 				CA5F2BD62972FFBC00A5A5AF /* TradingBackView.swift */,
 				CAEDE4B62970941600D27D6C /* BackgroundView.swift */,
+				CAA3D3D62975966300908776 /* TradingCardsView.swift */,
 				CAA3D3D42975926700908776 /* Models.swift */,
 			);
 			path = Views;
@@ -60,10 +57,7 @@
 		CAA3D3D129758A7000908776 /* Instances */ = {
 			isa = PBXGroup;
 			children = (
-				CAA3D3CE2974F3F800908776 /* KB1.swift */,
-				CAA3D3D22975908D00908776 /* KB2.swift */,
-				CAA3D3CC2974EDB400908776 /* FAG2.swift */,
-				CAA3D3CA2974EB6600908776 /* FAG1.swift */,
+				CAA3D3D8297598D300908776 /* PlayerListView.swift */,
 			);
 			path = Instances;
 			sourceTree = "<group>";
@@ -175,14 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEDE4B72970941600D27D6C /* BackgroundView.swift in Sources */,
-				CAA3D3CD2974EDB400908776 /* FAG2.swift in Sources */,
 				CA5F2BD72972FFBC00A5A5AF /* TradingBackView.swift in Sources */,
-				CAA3D3D32975908D00908776 /* KB2.swift in Sources */,
 				CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */,
-				CAA3D3CB2974EB6600908776 /* FAG1.swift in Sources */,
+				CAA3D3D9297598D300908776 /* PlayerListView.swift in Sources */,
 				CAA3D3D52975926700908776 /* Models.swift in Sources */,
+				CAA3D3D72975966300908776 /* TradingCardsView.swift in Sources */,
 				CA5F2BD52972FC0700A5A5AF /* TradingFrontView.swift in Sources */,
-				CAA3D3CF2974F3F800908776 /* KB1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
