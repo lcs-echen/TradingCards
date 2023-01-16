@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct TradingView: View {
+    
+    let firstName : String
+    let lastName : String
+    let image1Name: String
     var body: some View {
         ZStack {
+            
+            
             BackgroundView()
                 
 
             //Layer #4
-            Image("FAG")
+            Image(image1Name)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 330, height: 540)
@@ -40,14 +46,19 @@ struct TradingView: View {
             //Layer #6
             VStack (alignment: .trailing){
                 Group{
-                    Text("NAME ")
+                    Text(firstName)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .fontWidth(.compressed)
+                    + Text(" ")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    + Text("HERE")
+                    + Text(lastName)
                         .underline()
                         .font(.title)
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                 }
                 Text("USA Volleyball Player")
@@ -63,6 +74,6 @@ struct TradingView: View {
 
 struct TradingView_Previews: PreviewProvider {
     static var previews: some View {
-        TradingView()
+        TradingView(firstName: "Foluke", lastName: "Gunderson", image1Name: "FAG")
     }
 }

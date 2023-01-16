@@ -8,7 +8,20 @@
 import SwiftUI
 
 struct TradingBackView: View {
+
+    
+    let name : String
+    let image2Name: String
+            let position : String
+            var age: String
+            let height: String
+            let caption: String
+            let discription: String
+    
     var body: some View {
+        
+        
+        
         ZStack{
             BackgroundView()
             
@@ -25,17 +38,20 @@ struct TradingBackView: View {
             
             //Layer 5
             VStack (alignment: .center){
-                Text("MILLY BEK")
+                VStack(alignment: .leading) {
+                Text(name)
+                
                     .fontWidth(.expanded)
-                    .padding(.trailing, 130)
+                   
                     .foregroundColor(Color("DarkRed"))
                     .fontWeight(.medium)
                     .font(Font.system(size: 23))
                     .frame(height: 20)
-                    .padding(.bottom, 5)
-                VStack(alignment: .leading) {
+                    .padding(.bottom, 7)
+                    .padding(.leading, 10)
+                
                     HStack {
-                        Image("FAG1")
+                        Image(image2Name)
                             .resizable()
                             .scaledToFill()
                             .frame(width: 115, height: 160.0)
@@ -43,9 +59,9 @@ struct TradingBackView: View {
                             
                         VStack(alignment: .leading){
                             Group{
-                                Text("POSITION : ")
+                                Text("POSITION   : ")
                                     .font(.subheadline)
-                                + Text("HERE")
+                                + Text(position)
                                     .font(.subheadline.width(.expanded))
                                     .fontWeight(.semibold)
                             }
@@ -53,18 +69,16 @@ struct TradingBackView: View {
                             Group{
                                 Text("AGE           : ")
                                     .font(.subheadline.width(.expanded))
-                                    
-                                
-                                + Text("HERE")
+                                + Text(age)
                                     .font(.subheadline.width(.expanded))
                                     .fontWeight(.semibold)
                             }
                             .padding(.bottom, 5.0)
                             
                             Group{
-                                Text("HEIGHT     : ")
+                                Text("HEIGHT       : ")
                                     .font(.subheadline)
-                                + Text("HERE")
+                                + Text(height)
                                     .font(.subheadline.width(.expanded))
                                     .fontWeight(.semibold)
                             }
@@ -72,7 +86,7 @@ struct TradingBackView: View {
                             
                             
                             Group{
-                                Text("LEAGUE    : ")
+                                Text("LEAGUE      : ")
                                     .font(.subheadline)
                                 
                                 + Text("USA")
@@ -82,7 +96,7 @@ struct TradingBackView: View {
                             .padding(.bottom, 5.0)
                             
                             Group{
-                                Text("COACH  :  ")
+                                Text("COACH : ")
                                     .font(.subheadline)
                                 
                                 + Text("Karch Kiraly")
@@ -94,21 +108,23 @@ struct TradingBackView: View {
                         .frame(width: 200)
                         
                     }
-                    Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                    Text(caption)
                         .font(.caption)
-                        .padding(.top, 8.0)
+                        .padding(.top, 5.0)
+                        .frame(height: 20)
                 }
                 .frame(width: 320)
-                .padding(.leading, 35)
+                .padding(.leading, 37)
                 
            
-                Text("MILLY BEK")
+                Text(name)
                     .padding(.top, 10.0)
                     .fontWidth(.compressed)
                     
                     .foregroundColor(Color("DarkRed"))
-                    .font(Font.system(size: 70))
+                    .font(Font.system(size: 60))
                     .frame(height: 60)
+                    .padding(.leading, 20)
                 
                 Text("USA Volleyball Player")
                     .fontWeight(.medium)
@@ -119,7 +135,7 @@ struct TradingBackView: View {
                     .font(.caption)
                     .fontWeight(.heavy)
                     .foregroundColor(Color("DarkRed"))
-                Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+                Text(discription)
                     .font(.caption)
                     .multilineTextAlignment(.center)
                     .frame(width: 280.0, height: 150.0)
@@ -155,6 +171,6 @@ struct TradingBackView: View {
 
 struct TradingBackView_Previews: PreviewProvider {
     static var previews: some View {
-        TradingBackView()
+        TradingBackView(name: "Foluke Gunderson", image2Name: "FAG1", position: "Blocker", age: "36", height: "6-3", caption: "2021 Tokyo Olympic Games - Gold", discription: "Foluke Atinuke Gunderson (née Akinradewo; born October 5, 1987) is an indoor volleyball player who plays as a middle blocker. Born in Canada, she represents the United States internationally. Gunderson won gold with the national team at the 2010 FIVB World Grand Prix, 2014 World Championship, the Rimini Volleyball Nations League, and the 2020 Tokyo Summer Olympics,[1][2] silver at the 2012 London Summer Olympics, and bronze at the 2016 Rio Olympic Games. Her 2020 Olympics win allowed her to complete the trifecta of winning an Olympic bronze, silver, and gold medal")
     }
 }
