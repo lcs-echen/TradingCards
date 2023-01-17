@@ -18,61 +18,57 @@ struct PlayerListView: View {
                 TradingFrontView(player: folukeGunderson)
                 
             }, label: {
-                Text(folukeGunderson.name)
-                + Text(" Front")
+                EnhancedListView(player: folukeGunderson)
             })
             
             NavigationLink(destination: {
                 TradingBackView(player: folukeGunderson)
                 
             }, label: {
-                Text(folukeGunderson.name)
-                + Text(" Back")
+                Text(folukeGunderson.name) .fontWeight(.bold)
+                + Text(" - Back")
             })
             
             NavigationLink(destination: {
                 TradingFrontView(player: karaBajema)
             }, label: {
-                Text(karaBajema.name)
-                + Text(" Front")
+                EnhancedListView(player: karaBajema)
             })
             
             NavigationLink(destination: {
                 TradingBackView(player: karaBajema)
                 
             }, label: {
-                Text(karaBajema.name)
-                + Text(" Back")
+                Text(karaBajema.name)  .fontWeight(.bold)
+                + Text(" - Back")
             })
             
             NavigationLink(destination: {
                 TradingFrontView(player: rachaelAdams)
             }, label: {
-                Text(rachaelAdams.name)
-                + Text(" Front")
+                EnhancedListView(player: rachaelAdams)
             })
             
             NavigationLink(destination: {
                 TradingBackView(player: rachaelAdams)
                 
             }, label: {
-                Text(rachaelAdams.name)
-                + Text(" Back")
+                Text(rachaelAdams.name)  .fontWeight(.bold)
+                + Text(" - Back")
             })
             
             NavigationLink(destination: {
                 TradingFrontView(player: laurenCarlini)
             }, label: {
-                Text(laurenCarlini.name)
-                + Text(" Front")
+                EnhancedListView(player: laurenCarlini)
             })
             
             NavigationLink(destination: {
                 TradingBackView(player: laurenCarlini)
                 
             }, label: {
-                Text(laurenCarlini.name)
-                + Text(" Back")
+                Text(laurenCarlini.name) .fontWeight(.bold)
+                + Text(" - Back")
             })
             
         }
