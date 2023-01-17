@@ -43,7 +43,7 @@ struct TradingFrontView: View {
                 VStack (alignment: .trailing){
                     
                     Text(player.name)
-                        .font(Font.system(size: 45))
+                        .font(Font.system(size: 36))
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.trailing)
@@ -63,7 +63,7 @@ struct TradingFrontView: View {
                     
                 }
                 .frame(width: 200)
-                .padding(.top, 570)
+                .padding(.top, 550)
                 .padding(.leading, 160)
             }
             

@@ -65,8 +65,8 @@ struct TradingBackView: View {
                                     }
                                     .padding(.bottom, 5)
                                     Group{
-                                        Text("AGE           : ")
-                                            .font(.subheadline.width(.expanded))
+                                        Text("AGE             : ")
+                                            .font(.subheadline)
                                         + Text(player.age)
                                             .font(.subheadline.width(.expanded))
                                             .fontWeight(.semibold)

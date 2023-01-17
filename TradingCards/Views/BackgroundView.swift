@@ -31,10 +31,10 @@ struct BackgroundView: View {
             Rectangle()
                 .frame(height: 13.0)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                .padding(.bottom, 560)
+                .padding(.bottom, 480)
             VStack{
                 Spacer()
-                    .frame(height: 300.0)
+                    .frame(height: 360.0)
                 Rectangle()
                     .frame(height: 13.0)
                     .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)

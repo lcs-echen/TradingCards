@@ -12,6 +12,7 @@
 		CAA3D3D52975926700908776 /* VolleyballPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D42975926700908776 /* VolleyballPlayer.swift */; };
 		CAA3D3D72975966300908776 /* TradingCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D62975966300908776 /* TradingCardsView.swift */; };
 		CAA3D3D9297598D300908776 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3D8297598D300908776 /* PlayerListView.swift */; };
+		CAA3D3DD297635D500908776 /* EnhancedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3D3DC297635D500908776 /* EnhancedListView.swift */; };
 		CAEDE4B52970941600D27D6C /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */; };
 		CAEDE4B72970941600D27D6C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDE4B62970941600D27D6C /* BackgroundView.swift */; };
 		CAEDE4B92970941700D27D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEDE4B82970941700D27D6C /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		CAA3D3D42975926700908776 /* VolleyballPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VolleyballPlayer.swift; path = TradingCards/Model/VolleyballPlayer.swift; sourceTree = SOURCE_ROOT; };
 		CAA3D3D62975966300908776 /* TradingCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsView.swift; sourceTree = "<group>"; };
 		CAA3D3D8297598D300908776 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		CAA3D3DC297635D500908776 /* EnhancedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedListView.swift; sourceTree = "<group>"; };
 		CAEDE4B12970941600D27D6C /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEDE4B42970941600D27D6C /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
 		CAEDE4B62970941600D27D6C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 				CAEDE4B62970941600D27D6C /* BackgroundView.swift */,
 				CAA3D3D62975966300908776 /* TradingCardsView.swift */,
 				CAA3D3D8297598D300908776 /* PlayerListView.swift */,
+				CAA3D3DC297635D500908776 /* EnhancedListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				CAA3D3D9297598D300908776 /* PlayerListView.swift in Sources */,
 				CAA3D3D52975926700908776 /* VolleyballPlayer.swift in Sources */,
 				CAA3D3D72975966300908776 /* TradingCardsView.swift in Sources */,
+				CAA3D3DD297635D500908776 /* EnhancedListView.swift in Sources */,
 				CA5F2BD52972FC0700A5A5AF /* TradingFrontView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
