@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct TradingView: View {
+struct TradingFrontView: View {
     let player : VolleyballPlayer
     var body: some View {
 
             ZStack {
                 BackgroundView()
+                    .ignoresSafeArea()
+           
                 //Layer #4
                 Image(player.image1Name)
                     .resizable()
@@ -41,12 +43,12 @@ struct TradingView: View {
                 VStack (alignment: .trailing){
                     
                     Text(player.name)
-                        .font(Font.system(size: 40))
+                        .font(Font.system(size: 45))
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.trailing)
-                        .fontWidth(.condensed)
-                        .lineSpacing(0.14)
+                        .fontWidth(.compressed)
+                        
                     
                     Text("_________________")
                         .font(Font.system(size: 6))
@@ -61,16 +63,17 @@ struct TradingView: View {
                     
                 }
                 .frame(width: 200)
-                .padding(.top, 550)
+                .padding(.top, 570)
                 .padding(.leading, 160)
             }
-       
+            
     }
+
 }
 
 
-struct TradingView_Previews: PreviewProvider {
+struct TradingFrontView_Previews: PreviewProvider {
     static var previews: some View {
-        TradingView(player: folukeGunderson)
+        TradingFrontView(player: folukeGunderson)
     }
 }

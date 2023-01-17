@@ -14,7 +14,7 @@ struct TradingCardsView: View {
     var body: some View {
         ScrollView {
             VStack {
-                TradingView(player: player)
+                TradingFrontView(player: player)
                 TradingBackView(player: player)
             }
         }

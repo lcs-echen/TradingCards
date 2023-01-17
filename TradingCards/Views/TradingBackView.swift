@@ -16,6 +16,7 @@ struct TradingBackView: View {
             
             ZStack{
                 BackgroundView()
+                    .ignoresSafeArea()
                 
                 //Layer 4
                 RoundedRectangle(cornerRadius: 10)
@@ -29,8 +30,8 @@ struct TradingBackView: View {
                     .padding(.leading, 26)
                 
                 Color("LightGrey")
-                    .frame(width:328, height: 215)
-                    .padding(.bottom, 335)
+                    .frame(width:328, height: 222)
+                    .padding(.bottom, 338)
                     .padding(.leading, 26)
                 
                 
@@ -40,13 +41,12 @@ struct TradingBackView: View {
                     // Basic Information Part
                     VStack(alignment: .leading) {
                         Text(player.name)
-                            .fontWidth(.expanded)
                             .foregroundColor(Color("DarkRed"))
                             .fontWeight(.medium)
-                            .font(Font.system(size: 23))
+                            .font(Font.system(size: 24))
                             .frame(height: 20)
                             .padding(.bottom, 10)
-                            .padding(.leading, 10)
+                            .padding(.leading, 5)
                         VStack(alignment: .leading){
                             HStack {
                                 Image(player.image2Name)
@@ -109,7 +109,7 @@ struct TradingBackView: View {
                             Text(player.caption)
                                 .font(.caption)
                                 
-                                .frame(height: 30)
+                                .frame(height: 35)
                         }
                         
                         
@@ -121,11 +121,11 @@ struct TradingBackView: View {
                     // Discription Part
                     VStack {
                         Text(player.name)
-                            .padding(.top, 20.0)
+                            .padding(.top, 8.0)
                             .fontWidth(.compressed)
                         
                             .foregroundColor(Color("DarkRed"))
-                            .font(Font.system(size: 60))
+                            .font(Font.system(size: 54))
                             .frame(height: 60)
                             .padding(.leading, 20)
                         
