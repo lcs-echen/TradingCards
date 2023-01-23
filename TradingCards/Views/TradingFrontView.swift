@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct TradingFrontView: View {
+    
     let player : VolleyballPlayer
+    
     var body: some View {
 
             ZStack {

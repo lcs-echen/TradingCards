@@ -108,7 +108,6 @@ struct TradingBackView: View {
                             }
                             Text(player.caption)
                                 .font(.caption)
-                                
                                 .frame(height: 35)
                         }
                         

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct VolleyballPlayer{
+struct VolleyballPlayer: Identifiable {
+    let id = UUID()
     let name : String
     let image1Name: String
     let image2Name: String
@@ -27,7 +28,7 @@ let rachaelAdams = VolleyballPlayer(name: "RACHAEL ADAMS", image1Name: "RA1", im
 let laurenCarlini = VolleyballPlayer(name: "LAUREN CARLINI", image1Name: "LC", image2Name: "LC", position: "Setter", age: "28", height: "6-1", caption: "Won the 2016 Sullivan Award as America's best amateur athlete", discription: "On a club level, she plays for THY.[7] In May 2021, she was named to the 18-player roster for the FIVB Volleyball Nations League tournament. that was played May 25-June 24 in Rimini, Italy. It was the only major international competition before the Tokyo Olympics. She was a selected as an Olympic alternate for the 2020 Summer Olympics.")
 
 
-
+let allplayers = [folukeGunderson, karaBajema, rachaelAdams, laurenCarlini]
 
 
 
